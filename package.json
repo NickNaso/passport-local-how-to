@@ -1,0 +1,56 @@
+{
+  "name": "passport-local-how-to",
+  "description": "How to use Passport Local Strategy to handle authentication in express.js",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Nicola Del Gobbo",
+      "email": "nicoladelgobbo@gmail.com"
+    }
+  ],
+  "keywords": [
+    "expressjs",
+    "passportjs",
+    "local",
+    "strategy",
+    "authentication",
+    "session"
+  ],
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickNaso/passport-local-how-to.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NickNaso/passport-local-how-to/issues"
+  },
+  "homepage": "http://www.nacios.it/",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "response-powered-by": "^1.0.3",
+    "response-time": "^2.3.1",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "index.js",
+    "lib/"
+  ]
+}

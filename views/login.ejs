@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Login example</title>
+    <link rel="stylesheet" type="text/css" href="/styles/semantic.min.css" />
+    <style type = "text/css">
+        body {
+            background-color: #fff;
+        }     
+        body > .grid {
+            height: 100%;
+        }
+        
+        .image {
+            margin-top: -100px;
+        }
+        
+        .column {
+            max-width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            <h2 class="ui teal image header">
+                <img src="/images/nacios.png" class="image">
+                <div class="content">
+                    Login to your account
+                </div>
+            </h2>
+            <% if (error.length > 0) { %>
+                <div class="ui error message">
+                    <div class="header">
+                        Error happened executing login
+                    </div>
+                    <p><%= error %></p>
+                </div>
+            <% } %>
+            <form class="ui large form" method="POST", action="/login">    
+                <div class="ui stacked ">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <input type ="submit" class="ui fluid large teal submit button" value = "Login" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
